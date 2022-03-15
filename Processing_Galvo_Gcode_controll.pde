@@ -277,7 +277,7 @@ void serialEvent(Serial p)
   String s = p.readStringUntil('\n');
   println(s.trim());
 
-  if (s.trim().startsWith("ok")) stream();
+  if (s.trim().startsWith("ok")) stream();  // Open the Arduino serial monitor and see what output the g_code library sends. ok, OK, ok!, OK! and Change this to the correct output otherwise the Streamer will not work. 
   if (s.trim().startsWith("error")) stream(); // XXX: really?
 
   String[] list = split(s,':');
