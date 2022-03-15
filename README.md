@@ -9,3 +9,6 @@ MapFloat                            _      https://github.com/radishlogic/MapFlo
 
 
 G-Code-Arduino-Library-master       _      https://github.com/tinkersprojects/G-Code-Arduino-Library
+
+G_code must contain both X and Y coordinates in each line. Otherwise, the movement will not work
+
